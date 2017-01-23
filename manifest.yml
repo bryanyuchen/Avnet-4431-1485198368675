@@ -1,0 +1,11 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: Avnet 4431
+  host: Avnet-4431
+  disk_quota: 1024M
+  services:
+  - Avnet 4431-cloudantNoSQLDB
+  - Avnet 4431-iotf-service
