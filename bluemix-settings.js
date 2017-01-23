@@ -27,7 +27,7 @@ var settings = module.exports = {
     uiPort: process.env.PORT || 1880,
     mqttReconnectTime: 15000,
     serialReconnectTime: 15000,
-    debugMaxLength: 10000,
+    debugMaxLength: 3000,
 
     // Add the bluemix-specific nodes in
     nodesDir: path.join(__dirname,"nodes"),
@@ -51,9 +51,7 @@ var settings = module.exports = {
     // Serve up the welcome page
     httpStatic: path.join(__dirname,"public"),
 
-    functionGlobalContext: {
-    	AVerifier:require('alexa-verifier')
-    },
+    functionGlobalContext: {    },
 
     storageModule: require("./couchstorage")
 }
