@@ -27,7 +27,7 @@ var settings = module.exports = {
     uiPort: process.env.PORT || 1880,
     mqttReconnectTime: 15000,
     serialReconnectTime: 15000,
-    debugMaxLength: 3000,
+    debugMaxLength: 4000,
 
     // Add the bluemix-specific nodes in
     nodesDir: path.join(__dirname,"nodes"),
